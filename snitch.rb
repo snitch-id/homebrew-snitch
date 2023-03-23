@@ -4,7 +4,7 @@
 class Snitch < Formula
   desc "Intrusion detection"
   homepage "snitch.cool"
-  url "https://github.com/HerrMuellerluedenscheid/snitch/archive/refs/tags/v0.1.3.tar.gz"
+  url "https://github.com/HerrMuellerluedenscheid/snitch/archive/refs/tags/v0.1.4.tar.gz"
   sha256 "55b9c887557321cf6b2f6f879763769d1b49374b608719b1160edcae88516aee"
   license "MIT"
 
