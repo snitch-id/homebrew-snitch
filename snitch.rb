@@ -8,7 +8,7 @@ class Snitch < Formula
   sha256 "55b9c887557321cf6b2f6f879763769d1b49374b608719b1160edcae88516aee"
   license "MIT"
 
-  depends_on "rust" => :install
+  depends_on "rust"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
