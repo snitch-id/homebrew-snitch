@@ -4,11 +4,11 @@
 class Snitch < Formula
   desc "Intrusion detection"
   homepage "snitch.cool"
-  url "https://github.com/HerrMuellerluedenscheid/snitch/archive/refs/tags/v0.1.4.tar.gz"
+  url "https://github.com/HerrMuellerluedenscheid/snitch/archive/refs/tags/v0.1.3.tar.gz"
   sha256 "55b9c887557321cf6b2f6f879763769d1b49374b608719b1160edcae88516aee"
   license "MIT"
 
-  depends_on "rust"
+  depends_on "rust" => :build
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
@@ -16,7 +16,7 @@ class Snitch < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    system "asdf" "build"
+    system "cargo" "build"
   end
 
   test do
