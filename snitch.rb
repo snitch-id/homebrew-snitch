@@ -6,6 +6,6 @@ class Snitch < Formula
   license "MIT"
 
   def install
-    bin.install = "snitch-osx"
+    bin.install "snitch-osx"
   end
 end
